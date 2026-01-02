@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 30%;
+  margin: auto;
+  justify-items: center;
+  justify-content: center;
+  /* place-items: center; */
+}
+
+#score-section {
+  margin-bottom: 30px;
+}
+
+#score-section h2 {
+  font-size: 40px;
+  color: white;
+}
+
+#start-section {
+  margin-bottom: 40px;
+}
+
+#start-section button {
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+}
+
+#start-section button:hover {
+  background-color: green;
+}
+
+.btn {
+  /* display: inline-block; */
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+#second-section {
+  margin-top: 150px;
+}
+
+#second-section a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 100px;
+  color: white;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+@media  screen and (max-width: 756px) {
+  .container {
+      width: 100%;
+      gap: 20px;
+  }
+
+  .btn {
+      height: 150px;
+      width: 150px;
+  }
+
+  #level-title {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+}
